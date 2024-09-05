@@ -82,6 +82,5 @@ def main():
         else:
             print("Invalid choice, please select again")
 
-if __name__ == "__main__":
-    print("Welcome JL user\n")
-    main()
+print("Welcome JL user\n")
+main()
