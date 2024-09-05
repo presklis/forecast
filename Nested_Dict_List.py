@@ -44,7 +44,7 @@ def show_van_fill(network_dictionery, site_name):
                     output += "Van Fill\n"
                     for week, value in network_dictionery[region][site]["Van_Fill"].items():
                         output += f"WK{week}: {value}\n"
-                        return output
+    return output
 
 def main():
     branch = pyscript.interpreter.globals.get('branch')
