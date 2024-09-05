@@ -3,10 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chart App</title>
+<title>Python App</title>
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
-<h1>Chart from JSON Data</h1>
-<py-script src="Nested_Dict_List.py"></py-script>
+<h1>Python App</h1>
+<py-config>
+packages = ["pandas", "matplotlib", "seaborn"]
+</py-config>
+<py-script src="Nested_Dic_List.py"></py-script>
 </body>
 </html>
