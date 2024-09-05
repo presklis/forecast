@@ -9,9 +9,22 @@
 </head>
 <body>
 <h1>Python App</h1>
+<div>
+<label for="branch">Please input the branch name:</label>
+<input type="text" id="branch" name="branch">
+<button onclick="runPython()">Show Van Fill</button>
+</div>
+<pre id="output"></pre>
 <py-config>
-packages = ["pandas", "matplotlib", "seaborn"]
+packages = ["pandas"]
 </py-config>
-<py-script src="Nested_Dic_List.py"></py-script>
+<py-script src="app.py"></py-script>
+<script>
+function runPython() {
+const branch = document.getElementById('branch').value.toLowerCase();
+pyscript.interpreter.globals.set('branch', branch);
+pyscript.run('main()');
+}
+</script>
 </body>
 </html>
