@@ -2,7 +2,7 @@ import json
 
 try:
     with open('network.json', 'r') as file:
-    network = json.load(file)
+        network = json.load(file)
 except FileNotFoundError:
     network = {}
 except json.JSONDecodeError:
